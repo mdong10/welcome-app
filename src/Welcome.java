@@ -152,6 +152,7 @@ class SineWave {
     /**
      * Returns the value of the wave after adding dt to time.
      */
+    
     double update(double dt) {
         t = (t + dt) % (Math.PI * 2 / wavelength);
         return (Math.sin(t * wavelength + offset) + 1) / 2 * (max - min) + min;
