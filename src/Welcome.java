@@ -82,7 +82,7 @@ public class Welcome {
  */
 class FlyingLetter {
     private static final double
-        COLOR_SPEED = 0.000006,
+        COLOR_SPEED = 0.6,
         SPARKLE_CURVE = 1.6,
         FONT_SIZE = 32;
 
@@ -152,7 +152,7 @@ class SineWave {
     /**
      * Returns the value of the wave after adding dt to time.
      */
-    
+
     double update(double dt) {
         t = (t + dt) % (Math.PI * 2 / wavelength);
         return (Math.sin(t * wavelength + offset) + 1) / 2 * (max - min) + min;
