@@ -15,7 +15,7 @@ import edu.macalester.graphics.GraphicsText;
  */
 public class Welcome {
     private static final double
-        PHASE_SPREAD = 0.5,
+        PHASE_SPREAD = .5,
         INITIAL_TIME = -10,
         REGULAR_SPEED = 0.025,
         SLOW_MO_SPEED = 0.005,
@@ -29,12 +29,12 @@ public class Welcome {
     private final double margin = 32;
 
     public static void main(String[] args) {
-        new Welcome("hello");
+        new Welcome("macalester");
     }
 
     public Welcome(String message) {
         canvas = new CanvasWindow("Welcome to COMP 127", 600, 400);
-        canvas.setBackground(Color.BLACK);
+        canvas.setBackground(Color.black);
 
         letters = message.chars().mapToObj(FlyingLetter::new).collect(toList());
 
