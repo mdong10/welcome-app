@@ -29,7 +29,7 @@ public class Welcome {
     private final double margin = 32;
 
     public static void main(String[] args) {
-        new Welcome("macalester");
+        new Welcome("hello");
     }
 
     public Welcome(String message) {
